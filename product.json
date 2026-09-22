@@ -42,17 +42,17 @@
     {
       "name": "email",
       "example": "alex.kim@gmail.com",
-      "description": ""
+      "description": "The submitted address."
     },
     {
       "name": "activated",
       "example": "yes",
-      "description": ""
+      "description": "Whether the address is deliverable at that provider."
     },
     {
       "name": "avatar",
       "example": "https://lh3.googleusercontent.com/a/example",
-      "description": ""
+      "description": "Avatar URL."
     }
   ],
   "statuses": [

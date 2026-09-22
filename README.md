@@ -20,9 +20,9 @@ This is the official EmailCheckPro example repository for **one** bulk product, 
 
 | Column | Example | Meaning |
 |---|---|---|
-| `email` | `alex.kim@gmail.com` |  |
-| `activated` | `yes` |  |
-| `avatar` | `https://lh3.googleusercontent.com/a/example` |  |
+| `email` | `alex.kim@gmail.com` | The submitted address. |
+| `activated` | `yes` | Whether the address is deliverable at that provider. |
+| `avatar` | `https://lh3.googleusercontent.com/a/example` | Avatar URL. |
 
 The result is a **point-in-time signal**, not a verdict, and not identity data. It describes what the provider reported at the moment the task ran.
 
