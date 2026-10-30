@@ -1,5 +1,5 @@
 {
-  "name": "Email Bulk Avatar Check",
+  "name": "Email bulk avatar check",
   "brand": "EmailCheckPro",
   "repository": "emailcheckpro/email-bulk-avatar-api",
   "description": "Upload a whole file of addresses and download the avatars when the task finishes.",
@@ -31,7 +31,7 @@
   },
   "limits": {
     "min_items": 1000,
-    "max_items": 100000,
+    "max_items": 500000,
     "poll_interval_seconds": 30,
     "file_formats": [
       "txt",
@@ -40,19 +40,24 @@
   },
   "result_fields": [
     {
-      "name": "email",
+      "name": "identifier",
       "example": "alex.kim@gmail.com",
-      "description": "The submitted address."
+      "description": "Submitted identifier, used to join the result to the input. Phone identifiers include their country code."
     },
     {
       "name": "activated",
-      "example": "yes",
-      "description": "Whether the address is deliverable at that provider."
+      "example": "true",
+      "description": "The determined positive/negative signal for this product; interpret it in the product context."
     },
     {
       "name": "avatar",
+      "example": "true",
+      "description": "Whether an avatar is available."
+    },
+    {
+      "name": "avatar_url",
       "example": "https://lh3.googleusercontent.com/a/example",
-      "description": "Avatar URL."
+      "description": "Public avatar URL when available; an empty value does not reveal a private image."
     }
   ],
   "statuses": [
@@ -63,5 +68,5 @@
   "pricing_url": "https://emailcheckpro.com/pricing",
   "maintainer": "EmailCheckPro",
   "license": "MIT",
-  "last_reviewed": "2026-09-22"
+  "last_reviewed": "2026-10-30"
 }
